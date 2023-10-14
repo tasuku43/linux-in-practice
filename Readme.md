@@ -10,9 +10,10 @@ docker build -t linux-in-practice .
 
 ### Run container
 ```shell
-docker run --cpuset-cpus="0" -it --rm \
+docker run -it --rm \
   -v $(pwd)/golang:/golang \
   -v $(pwd)/python:/python \
+  -v $(pwd)/c:/c \
   --name linux-in-practice-container \
   linux-in-practice /bin/bash
 ```
