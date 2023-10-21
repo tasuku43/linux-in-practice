@@ -6,6 +6,7 @@ RUN apt update && \
     apt install -y \
     strace \
     binutils \
+    psmisc \
     build-essential \
     golang \
     sysstat \

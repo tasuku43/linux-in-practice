@@ -14,6 +14,7 @@ docker run -it --rm \
   -v $(pwd)/golang:/golang \
   -v $(pwd)/python:/python \
   -v $(pwd)/c:/c \
+  -v $(pwd)/bash:/bash \
   --name linux-in-practice-container \
   linux-in-practice /bin/bash
 ```
